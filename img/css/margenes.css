@@ -1,0 +1,47 @@
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242,242,242)
+}
+
+.main-box {
+    display: flex;
+    align-items:flex-start;
+    margin-top: 200px;
+    justify-content: center;
+    flex-direction: row;
+    /* vh: view height */
+    height: 100vh;
+}
+.box-style {
+    width: 300px;
+    margin: 0 40px;
+    background-color: white;
+}
+.box-1 {
+    border: 3px solid rgb(36, 233, 95);
+    display: inline-block;
+    padding:0 25px ;
+    
+}
+.box-2 {
+    border: 4px dotted rgb(141, 10, 216) ;
+    display: inline-block;
+    padding: 0 25px;
+}
+.box-3 {
+    border: 3px double rgb(243, 4, 163);
+    display:inline-block;
+    padding: 0 25px;
+}
+.box-4 {
+    border: 3px dashed rgb(238, 119, 15);
+    display: inline-block;
+    padding: 0 25px;
+} 
+p{
+    font-size: 1.4em;
+    text-align: justify;
+    background-color: white;
+
+}

@@ -1,0 +1,26 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+header {
+    height: 95px;
+}
+.carousel {
+    display: flex;
+}
+.carousel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100vh - 95px);
+    background-color: blue;
+}
+.img-carousel {
+    width: 100%;
+}
+.box-card-1 {
+    height: 500px;
+    background-color: rgb(64,64,64,9);
+}

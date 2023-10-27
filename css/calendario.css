@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+   
+}
+.main-box {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(253, 254, 255);
+    display: flex;
+    justify-content: center;
+
+}
+.Calendar-box {
+    width: 80%;
+    border: 3px solid black;
+    background-color: white;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 100px );
+     
+    
+
+}
+.box-celda {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(156, 10, 235);
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+}
+.nombre-mes {
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+.box-1 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+.nombre-dia {
+    background-color: rgb(249, 247, 247);
+}
+.num-dia {
+position: relative;
+bottom: 8px;
+right: 8px;
+}
