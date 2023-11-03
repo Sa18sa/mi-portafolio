@@ -1,43 +1,310 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Productora Multimedia</title>
 </head>
+
 <body>
-    <img src="img/qq.jpg" alt="">
-    <h1> bienvenidos a mi portafolio</h1> 
-    <h2>sara ramirez perdomo-multimedia 2500096</h2>
-    <h3>contactame!. telefono:3228252906</h3>
-    <h4>muchas gracias </h4>
-    <ul>menu</ul>
-        <li><a href="index.html">inicio</a></li>
-        <li><a href="listas.html">listas</a></li>
-        <li><a href="fuentes.html">fuentes</a></li>
-    
-        <li><a href="fuente1.html">fuente1</a></li>  
-        <li><a href="fuente2.html">fuente2</a></li>
-        <li><a href="fuente3.html">fuente3</a></li>
-        <li><a href="colores.html">colores</a></li>
-        <li><a href="margenes.html">margenes</a></li>
-        <li><a href="catalogo.html">catalogo</a></li>
-        <li><a href="tablas.html">tablas</a></li>
-        <li><a href="menú-horizontal.html">menú-horizontal</a></li>
-        <li><a href="media-query.html">media-query</a></li>
-        <li><a href="menu-subitems.html">menu-subitems</a></li>
-        <li><a href="transitions.html">transitions</a></li>
-        <li><a href="flexbox.html">flexbox</a></li>
-        <li><a href="maquetacion.html">maquetacion</a></li>
-        <li><a href="maquetacion1.html">maquetacion1</a></li>
-        <li><a href="calendario.html">calendario</a></li>
-        <li><a href="mi-portafolio.html">mi-portafolio</a></li>
-        <li><a href="starbucks.html">starbucks</a></li>
-        <li><a href="uber.html">uber</a></li>
-        <li><a href="sneakers.html">sneakers</a></li>
-    <ul>   
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Sara</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube">Sara</i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i>SaritaElizabeth</a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i>@SaraElizabeth</a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Sara SaraElizabeth</span>, Productor Multimedia</h2>
+                <p class="descripcion"> </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/DSC_0022.JPG" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Sara SaraElizabeth</span> </h2>
+            <h3>Productor Multimedia</h3>
+            <p>Soy Sara Elizabeth, una productora multimedia con experiencia en edición de video, diseño gráfico, animación 2D, programación (HTML y CSS) y fotografía. Estoy aquí para dar vida a tus ideas a través de medios visuales impactantes. ¿Tienes un proyecto en mente? ¡Hablemos!
+</p>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <a href="">Descargar Hoja de vida</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    
+                </ul>
+                <p>Con un profundo dominio de Adobe Illustrator, estoy listo para convertir tus ideas en diseños impresionantes. Mi creatividad y experiencia en esta potente herramienta me permiten ofrecerte soluciones gráficas de alta calidad que harán que tu proyecto destaque. Estoy emocionado por la oportunidad de colaborar contigo y llevar tus visiones visuales a la realidad</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Porgramación FrontEnd</h4>
+                <hr>
+                <ul class="servicios-tag">
+                
+                </ul>
+                <p>Como programador con habilidades sólidas en HTML y CSS, puedo crear sitios web atractivos y funcionales que reflejen tu visión y necesidades. Mi enfoque en la calidad del código y el diseño responsive garantiza una experiencia excepcional para los visitantes de tu sitio. Estoy comprometido en ayudarte a destacar en la web y alcanzar tus objetivos en línea</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Edicion de video</h4>
+                <hr>
+                <ul class="servicios-tag">
+                   
+                </ul>
+                <p>Como editor de videos, transformo tus ideas en emocionantes historias visuales. Mi pasión por la edición y mi experiencia en la creación de contenido atractivo garantizan que tus videos destaquen. Ya sea para promoción, entretenimiento o educación, estoy comprometido en ofrecerte producciones de alta calidad que cautiven a tu audiencia y comuniquen tu mensaje de manera impactante</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Fotografia</h4>
+                <hr>
+                <ul class="servicios-tag">
+                  
+                </ul>
+                <p>Capturar momentos significativos y bellas imágenes es mi pasión. Como fotógrafo, estoy comprometido en brindarte imágenes que cuenten historias, transmitan emociones y resalten la belleza en cada toma. Ya sea para eventos especiales, retratos, productos o paisajes, estoy listo para inmortalizar tus momentos más preciados con creatividad y calidad excepcional</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Animacion 2D</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    
+                </ul>
+                <p>La magia de la animación 2D es mi especialidad. Con una mezcla de creatividad y técnica, puedo dar vida a tus ideas y conceptos a través de gráficos animados cautivadores. Desde videos explicativos hasta animaciones promocionales, mi objetivo es crear contenido visualmente impactante que capte la atención y comunique de manera efectiva. Estoy emocionado por la oportunidad de transformar tus visiones en animaciones vibrantes y memorables.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>DISEÑO WEB</h4>
+                <hr>
+                <ul class="servicios-tag">
+                   
+                </ul>
+                <p>El diseño web es mi pasión y mi compromiso. Con un enfoque centrado en la experiencia del usuario y el diseño estético, puedo crear sitios web a medida que reflejen la esencia de tu marca. Desde el diseño visual hasta la funcionalidad, mi objetivo es construir plataformas atractivas y efectivas que conviertan visitantes en clientes. Estoy listo para colaborar contigo y llevar tu presencia en línea al siguiente nivel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Illustrator</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Premier pro</p>
+                <span class="porcentaje">40%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Photoshop</p>
+                <span class="porcentaje">30%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Programación</p>
+                <span class="porcentaje">20%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/netflix.PNG" alt="">
+                <div class="info">
+                    <h4>Listas</h4>
+                    <p>Netflix</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <a href="snakers2.html">
+                <div class="overlay"></div>
+                <img src="img/snekers.PNG" alt="">
+                <div class="info">
+                    <h4>Snekers</h4>
+                    <p>zapatos</p> 
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="catalogo.html">
+                <div class="overlay"></div>
+                <img src="img/catalogo.PNG" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="starbucks.html">
+                <div class="overlay"></div>
+                <img src="img/starbucks.PNG" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="tablas.html">
+                <div class="overlay"></div>
+                <img src="img/tablas.PNG" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="fuente1.html">
+                <div class="overlay"></div>
+                <img src="img/game.PNG" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="fila">
+            <a href="fuente3.html">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/disney.PNG" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="img/456.PNG">
+                <div class="overlay"></div>
+                <img src="img/456.PNG" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="js/estilo.js"></script>
 </body>
+
 </html>
