@@ -1,0 +1,33 @@
+.box-redireccion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px
+}
+.div-redireccion {
+    width: 400px;
+    height: 480px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms;
+    padding: 0;
+    cursor: pointer;
+}
+.div-redireccion:hover {
+
+}
+img {
+    width: 80%;
+    display: block;
+}
+.msg-flotante {
+    position: absolute;
+    background-color:
+}
